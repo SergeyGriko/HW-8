@@ -10,6 +10,7 @@ public class Main {
         while (total <= target) {
             total += salary;
             months++;
+            System.out.println("Месяц " + months + " сумма накоплений равна " + total + " рублей");
         }
         System.out.println("Понадобится месяцев: " + months);
 
@@ -27,13 +28,12 @@ public class Main {
         System.out.println();
         System.out.println();
         System.out.println("Задача Третья");
-        int startPopulation = 12_000_000;
-        int born = startPopulation / 1000 * 17;
-        int death = startPopulation / 1000 * 8;
-        int totalPopulation = startPopulation + born + death;
+        int totalPopulation = 12_000_000;
         for (i = 1; i <= 10; i++) {
+            int born = totalPopulation / 1000 * 17;
+            int death = totalPopulation / 1000 * 8;
+            System.out.println("Год " + i + ", численность населения составляет " + totalPopulation);
             totalPopulation += (born - death);
-            System.out.println("Год " + i + " численность населения составляет " + totalPopulation);
 
         }
         System.out.println();
