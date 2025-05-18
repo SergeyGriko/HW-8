@@ -71,9 +71,23 @@ public class Main {
             if (months % 6 == 0) {
                 System.out.println(months + " месяц сумма накоплений " + deposit);
             }
-            System.out.println();
-            System.out.println("Задача Седьмая");
         }
-
+        System.out.println();
+        System.out.println("Задача Седьмая");
+        months = 31;
+        for (int day = 3; day <= months; day += 7) {
+            System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет.");
+        }
+        System.out.println();
+        System.out.println("Задача Восьмая");
+        int currentYear = 2025;
+        int startYear = currentYear - 200;
+        int endYear = currentYear + 100;
+        int cometPeriod = 79;
+        for (int year = startYear; year <= endYear; year++) {
+            if (year % cometPeriod == 0) {
+                System.out.println(year);
+            }
+        }
     }
 }
