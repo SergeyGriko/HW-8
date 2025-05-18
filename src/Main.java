@@ -41,20 +41,24 @@ public class Main {
         long deposit = 15_000;
         long mission = 12_000_000;
         int percent = 7;
-        int monts = 0;
+        months = 0;
 
         while (deposit < mission) {
             deposit = deposit + deposit * percent / 100;
-            monts++;
-            System.out.println("Сумма накопления за " + monts + " месяц: " + deposit + " рублей");
+            months++;
+            System.out.println("Сумма накопления за " + months + " месяц: " + deposit + " рублей");
         }
         System.out.println();
         System.out.println("Задача Пятая");
+        deposit = 15_000;
+        mission = 12_000_000;
+        percent = 7;
+        months = 0;
         while (deposit < mission) {
             deposit = deposit + deposit * percent / 100;
-            monts++;
-            if (monts / 6 == 0) {
-                System.out.println(monts + " месяц " + deposit);
+            months++;
+            if (months % 6 == 0) {
+                System.out.println(months + " месяц сумма накоплений " + deposit);
             }
         }
 
