@@ -61,6 +61,19 @@ public class Main {
                 System.out.println(months + " месяц сумма накоплений " + deposit);
             }
         }
+        System.out.println();
+        System.out.println("Задача Шестая");
+        months = 0;
+        deposit = 15000;
+        while (months <= 108) {
+            deposit = deposit + deposit * percent / 100;
+            months++;
+            if (months % 6 == 0) {
+                System.out.println(months + " месяц сумма накоплений " + deposit);
+            }
+            System.out.println();
+            System.out.println("Задача Седьмая");
+        }
 
     }
 }
