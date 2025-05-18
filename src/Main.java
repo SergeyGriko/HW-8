@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Задача Первая");
@@ -48,6 +50,13 @@ public class Main {
         }
         System.out.println();
         System.out.println("Задача Пятая");
+        while (deposit < mission) {
+            deposit = deposit + deposit * percent / 100;
+            monts++;
+            if (monts / 6 == 0) {
+                System.out.println(monts + " месяц " + deposit);
+            }
+        }
 
     }
 }
