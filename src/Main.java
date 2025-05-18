@@ -36,15 +36,18 @@ public class Main {
         }
         System.out.println();
         System.out.println("Задача Четвертая");
-        double deposit = 15000.0;
-        double percent = 0.07;
-        double mission = 12_000_000.0;
+        long deposit = 15_000;
+        long mission = 12_000_000;
+        int percent = 7;
         int monts = 0;
 
         while (deposit < mission) {
-            deposit = deposit + deposit * percent;
-            months++;
-            System.out.println("Сумма накопления за " + monts + " месяц " + deposit + " рублей");
+            deposit = deposit + deposit * percent / 100;
+            monts++;
+            System.out.println("Сумма накопления за " + monts + " месяц: " + deposit + " рублей");
         }
+        System.out.println();
+        System.out.println("Задача Пятая");
+
     }
 }
